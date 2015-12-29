@@ -41,10 +41,10 @@
               <input id="company-name" name="company-name" maxlength="30" value="" type="text" placeholder="Company Name" required>
             </div>
 
-            <div class="form-input">
+            <!-- <div class="form-input">
               <label>How many guests will be attending?</label>
               <input id="attending" name="attending" value="" type="text" placeholder="# Attending" required>
-            </div>
+            </div> -->
 
             <div class="form-input">
               <label>Phone</label>
@@ -52,15 +52,15 @@
             </div>
 
             <div class="form-input">
-              <input id="rsvp-submit" class="pure-button pure-button-disabled" type="submit" value="RSVP CLOSED" />
+              <input id="rsvp-submit" class="pure-button" type="submit" value="RSVP Now" />
             </div>
 
           </form>
       </div>
 
       <div id="thank-you" class="hidden">
-        <h2>Thank you Reserving your spot at<br>Johnstone Monroe's<br>Customer Appreciation Dinner!!<br>
-        We look forward to seeing you December 10th @ 6pm at South Peidmont Community College</h2>
+        <h2>Thank you Reserving your spot at<br>Johnstone Monroe's<br>Geothermal Training Course<br>
+        We look forward to seeing you February 11 @ 8am</h2>
       </div>
 
   <script type="text/javascript">
@@ -73,14 +73,12 @@
         var firstName = $("#first-name").val();
         var lastName = $("#last-name").val();
         var company = $("#company-name").val();
-        var guests = $("#attending").val();
         var phone = $("#customer-phone").val();
 
         var newAttendee = new Attendee();
         newAttendee.set("firstName", firstName);
         newAttendee.set("lastName", lastName);
         newAttendee.set("company", company);
-        newAttendee.set("guests", guests);
         newAttendee.set("phone", phone);
 
         newAttendee.save({

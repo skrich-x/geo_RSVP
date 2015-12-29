@@ -34,18 +34,22 @@ body {
 }
 
 .johnstone-logo{
+  height:10em;
+  width:10em;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
-  margin:1em;
+  margin-top:2em;
+  margin-bottom:6em;
 }
 
 #main h2 {
-  font-family: 'Kurale', serif;
+  font-family: 'Raleway', serif;
   font-size: 2em;
-  color:#e62739;
+  color:#006C3E;
 }
 
 .header-container{
-  background-image: url("../geothermal.jpeg");
+  background: url("../geothermal.jpeg")top center no-repeat;
+
 }
 
 #thank-you{
@@ -56,5 +60,5 @@ body {
 #thank-you h2{
   font-family: 'Raleway', serif;
   font-size: 2em;
-  color:#e62739;
+  color:#006C3E;
 }
